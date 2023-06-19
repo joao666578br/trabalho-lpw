@@ -1,4 +1,4 @@
 # trabalho-lpw
-Joao Gabriel
-Gustavo Italo
-gustavo Ferreira
+Joao Gabriel /
+Gustavo Italo /
+Gustavo Ferreira
