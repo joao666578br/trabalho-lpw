@@ -26,26 +26,26 @@ body{
 
 header{
     grid-area: header;
-    height: 10vh;
+    
 
 }
 
 main{
     background-color: rgb(34, 34, 65);    
     grid-area: main;
-    height: 80vh;
+    
 }
 
 aside{
     background-color: rgb(34, 34, 65);
     grid-area:aside;
-    height: 80vh;
+    
 }
 
 footer{
     background-color: rgb(255, 255, 255);
     grid-area:footer;
-    height: 20vh;
+    
 
 }
 
