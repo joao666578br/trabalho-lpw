@@ -1,4 +1,7 @@
-
+.header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 a{
     color:white;
     text-decoration: none;
@@ -15,15 +18,14 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 4px;
     color: rgb(233, 196, 75);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(18, 18, 105);
     height: 10vh;
     border-radius:  0px 0px 20px 20px;
-    
 
 
 
@@ -76,6 +78,7 @@ body{
     transition: transform 0.3s ease-in;
     border-radius: 100px 0 0 100px ;
     
+    
 }
 .nav-list li{
     margin-left: 0;
@@ -107,3 +110,6 @@ body{
         transform: translateX(0);
     }
 }
+
+
+
