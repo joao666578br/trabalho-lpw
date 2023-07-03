@@ -1,57 +1,95 @@
 *{
-    margin:0;
-    padding: 0;
     box-sizing: border-box;
-}
+    margin: 0;
+    padding:0;
 
-
-body{
-    min-height: 80vh;
-    background: rgb(34, 34,65);
 }
-header{
-    height: 20vh;
-}
-
-.container{
-    position:relative;
+html, body{
+ 
     width: 100%;
     height: 100vh;
 }
 
-.bolhas{
-    position: absolute;
-    display:flex;
+body{
+    background-image: url(https://socientifica.com.br/wp-content/uploads/2021/06/buraco-negro.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    width:100%;
+    background-color: rgb(34, 34, 65);
+    color:whitesmoke;
+}
+.container{
+ 
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10vh 90%;
+    grid-template-areas: 'header header  '
+                            'main main'
+                            
 }
 
-.bolhas span{
-   
-    width: 10px;
-    height: 10px;
-    background-color: #e5ff00;
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #e5ff0044,
-    0 0  540px #35381e,
-    0 0  100px #e5ff00;
-    animation: animar calc(250s / var(--i)) linear infinite;
-}
 
-@keyframes animar{
-    0%{
-        transform: translateY(100vh) scale(0);
-    }
-
-    100%{
-        transform: translateY(-10vh) scale(1);
-    }
-}
-
-.bolhas span:nth-of-type(even){
-    background-color: rgb(46, 42, 53);
-    box-shadow: 0 0 0 10px #eee44e,
-    0 0  540px #eee44e,
-    0 0  100px #eee44e;
+header{
+    width: 100vw;
 
     
+    position: fixed;
+    grid-area: header;
+
+}
+
+ main{
+    /*background-color: rgb(34, 34, 65);    */
+    height: 100%;
+    grid-area: main;
+}
+
+ aside{
+    background-color: rgb(34, 34, 65);
+    grid-area:aside;
+}
+
+ footer{
+    background-color: rgb(255, 255, 255);
+    grid-area:footer;
+
+}
+.slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 1;}
+.slide-controller:nth-child(3):checked ~ .slide-show .slides-list{--selected-item: 2;}
+.slide-controller:nth-child(4):checked ~ .slide-show .slides-list{--selected-item: 3;}
+
+.slide-show{
+  overflow: hidden;
+}
+
+.slides-list{
+  --selected-item: 0;
+  --total-items: 4;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+  left: calc(var(--selected-item) * -100%);
+  width: calc(var(--total-items) * 100%);
+  transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.slidee{
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    border: 2px white solid;
+
+
+
 }
