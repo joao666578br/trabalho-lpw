@@ -1,63 +1,92 @@
+
 *{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
 
 }
 html, body{
     margin: 0;
     padding:0;
-    height: 100%;
-  
+    width: 100%;
 }
 
 body{
-    height: 100vh;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
     width:100%;
     background-color: rgb(34, 34, 65);
     color:whitesmoke;
 }
+
+    .bk{
+        
+
+    }
 .container{
+    
+    height: 100%;
+    background-image: url(https://socientifica.com.br/wp-content/uploads/2021/06/buraco-negro.gif);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+ 
     display:grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 10vh 70vh 20vh;
-    grid-template-areas: "header header "
-                            "main main"
-                            "footer footer"
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 10vh 90%;
+    grid-template-areas: "header header header"
+                            "aside main main"
+                            
 }
 
-header{
+ header{
+    width: 100vw;
+
+    
+    position: fixed;
     grid-area: header;
-    
 
 }
 
-main{
-    background-color: rgb(34, 34, 65);    
+ main{
+    /*background-color: rgb(34, 34, 65);    */
+    height: 100%;
     grid-area: main;
-    
+    padding: 20px;
 }
 
-aside{
-    background-color: rgb(34, 34, 65);
+ aside{
+    
+    position:fixed;
+    margin-top: 100px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.226);
     grid-area:aside;
-    
+    color: black;
+    height: 900px;
+    width: 15vw;
+    border: 2px black solid;
 }
 
-footer{
+ footer{
     background-color: rgb(255, 255, 255);
     grid-area:footer;
-    
 
 }
 
 .box{
     width: 100px;
     height: 40px;
+   
 }
 
 img{
-    display:flexbox;
-    width: 50%;
-    height: 60%;
+    float: left;
+    width: 200px;
+    border-radius: 100%;
 }
 
 .linha{
@@ -65,14 +94,175 @@ img{
 }
 
 
-@media (max-width:600px){
+.text{
+    background-color: rgba(139, 139, 151, 0.548);
+    max-width: 60vw;
+    margin: 10% auto;
+    padding:10px;
+    border-radius:  0 20px 20px 20px;
+    color: black;
+}
+.text2{
+    background-color: rgba(139, 139, 151, 0.541);
+    max-width: 900px;
+    margin-top:0;
+    margin: 10% auto;
+    padding:10px;
+    border-radius: 20px;
+}
+
+
+
+
+.text h1{
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: rgba(22, 22, 44, 0.2);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px white solid;
+    font-size: 2.5em;
+  
+}
+
+.text p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.text h3{
+    font-size:1.5em;
+    padding:100px;
+}
+
+.aside11{
+    background-color: rgba(114, 109, 109, 0.603);
+    border-radius: 0 30px;
+
+}
+.aside1 ul{
+    list-style: none;
+
+}
+.aside1{
+   
+    font-size: 1rem;
+    margin:  20px 5px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+.aside1 a{
+    color:black;
+}
+.aside1 h3{
+    background-color: rgb(108, 174, 218);
+}
+
+
+/*
+.model{
+    background-color: rgb(17, 82, 39);
+    margin:0;
+    padding:0;
+    float:left;
+    width:500px;
+}
+*/
+
+.robo:hover{
+   
+    background-color: black;
+}
+
+.BT-NOMES{
+    
+   
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.BT-NOMES a{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 5px white solid;
+
+   
+    
+    color: black;
+}
+
+@media (width: 700px){
+    *{
+        box-sizing: border-box;
+    
+    }
+    html, body{
+
+        margin: 0;
+        padding:0;
+        width: 100vw;
+    }
+    
+    body{
+        padding: 0;
+        margin: 0;
+        color:whitesmoke;
+        height: 100%;
+      
+    }
+    :root {
+        font-size: 1.5em;
+    }
+
     .container{
+        height: 100%;
+        background-image: url(https://socientifica.com.br/wp-content/uploads/2021/06/buraco-negro.gif);
+        margin: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
         display:grid;
-        grid-template-columns: 4fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 10vh 70vh 20vh;
-        grid-template-areas: "header"
+        grid-template-areas: "header "
                                 "main"
-                                "footer"
+                                "aside"
+                                
+    }
+    
+     header{
+        width: 100vw;
+        display: flex;
+    
+        
+        position: fixed;
+        grid-area: header;
+    
+    }
+    
+     main{
+        /*background-color: rgb(34, 34, 65);    */
+        height: 100%;
+        grid-area: main;
+        padding: 20px;
+    }
+    
+     aside{
+        position:fixed;
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 0.322);
+        grid-area:aside;
+        color: black;
+        height: 900px;
+        width: 15vw;
+        border: 2px black solid;
+    }
+    
+     footer{
+        background-color: rgb(255, 255, 255);
+        grid-area:footer;
+    
     }
 
 }
