@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap');
+
+
+
 .header {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
@@ -14,34 +18,47 @@ a:hover{
 }
 
 #logo{
+    font-family: 'Ysabeau SC', sans-serif;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: rgb(233, 196, 75);
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding-left:30px;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 50px 50px 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#logo-img{
+    width: 50px;
 }
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
     height: 10vh;
-    border-radius:  0px 0px 20px 20px;
-
-
-
 }
 
 
 .mobile-menu{
     cursor:pointer;
     display: none;
+    margin-right: 20px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50px 0px 0px 50px;
 
 }
 
 .mobile-menu div{
     width: 32px;
     height: 2px;
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
     margin: 8px;
 }
 
@@ -68,16 +85,15 @@ body{
     position: fixed;
     top: 8vh;
     right: 0;
-    width: 10vw;
+    width: 200px;
     height: 92vh;
-    background-color: rgb(34, 34, 105);
+    background-color: rgb(0, 0, 0);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     transform:translateX(100%) ;
     transition: transform 0.3s ease-in;
     border-radius: 100px 0 0 100px ;
-    
     
 }
 .nav-list li{
@@ -88,7 +104,6 @@ body{
 
 .mobile-menu{
     display: block;
-    margin-left: 950px;
 }
 
 
@@ -110,6 +125,3 @@ body{
         transform: translateX(0);
     }
 }
-
-
-
