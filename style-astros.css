@@ -37,7 +37,7 @@ header{
     grid-area: h;
     background-image: url(img/andromeda.jpg);
     background-size: cover;
-    padding-bottom: 600px;
+    padding-bottom: 650px;
     display: block;
     border-bottom: 2px white solid;
 }
