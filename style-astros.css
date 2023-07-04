@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 html, body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Jost', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding:0;
@@ -24,25 +25,30 @@ body{
 
 .container{
 
-    display:grid;
-    grid-template:  10vh 80vh 10vh/1fr 3fr;
+    display:block;
+    grid-template:  30vh 60vh 10vh/1fr 3fr;
     grid-template-areas:
      "h h" 
                           "a m" 
                              "f f" ;
+    
                             
 }
 header{
     width: 100%;
-    height: 100%;
     grid-area: h;
-    position: fixed;
+    background-image: url(img/andromeda.jpg);
+    background-size: cover;
+    padding-bottom: 850px;
+    display: block;
+    border-bottom: 2px white solid;
 }
 
 main{
     color: black;
     height: 100%;
     grid-area: m;
+    display: block;
 }
 aside{
     border: 2px black solid;
@@ -62,11 +68,11 @@ footer{
 
 
 .text{
-    background-color: rgba(139, 139, 151, 0.2);
+    background-color: rgba(139, 139, 151, 0);
     max-width: 900px;
-    margin: 10% auto;
-    padding:10px;
+    margin-left: 20%;
     border-radius: 20px;
+
 }
 .text2{
     background-color: rgba(139, 139, 151, 0.541);
@@ -97,5 +103,22 @@ footer{
 .text h3{
     font-size:1.5em;
     padding:100px;
+}
+
+
+/*configuração do titulo do site*/
+
+.titulo {
+    color: rgb(255, 255, 255);
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.titulo h1{
+    font-size: 80px;
+}
+.titulo h2 {
+    font-size: 30px;
 }
 
